@@ -179,6 +179,7 @@ footer {
 .dropdown-content {
     display: none;
     position: absolute;
+    margin-top: 5px;
     background: linear-gradient(to right, #14234f, #1a1a1a);
     border-radius: 20px;
     min-width: 200px;
