@@ -1,4 +1,4 @@
-let aboutMeText = "Ik ben Jordi, 19 jaar en ik heb een passie voor alles dat met computers temaken heeft. Waaronder coderen, hardware en systeem beheer. Leuk dat je een kijkje neemt op mijn website. Deze website is nu nog in onderhoud dus kom later terug!"
+let aboutMeText = "My name is Jordi, I am 19 years old and my passion lays at everything related to computers. Stuff like coding, hardware and networking is where my main focus is. Thanks for looking at my website, as of now it is in maintenance, so come back soon when it is fully finished!"
 let currentAboutMeText = ""
 const aboutMeTextDisplay = document.getElementById("about-me")
 

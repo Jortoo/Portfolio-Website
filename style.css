@@ -100,7 +100,7 @@ body {
 }
 
 .vaardigheden ul {
-    margin-left: 75px;
+    margin-left: 25px;
     font-size: 30px;
     list-style-type: square;
     color: white;
@@ -156,14 +156,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
-.google_translate_element {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-
 .dropBtn {
     color: white;
     padding: 5px;
@@ -202,6 +194,8 @@ footer {
     padding: 20px;
     text-decoration: none;
     display: block;
+    border-bottom: 2px solid #1a1a1a;
+    border-radius: 10px;
 }
 
 .dropdown-content a:hover {
