@@ -151,3 +151,10 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.google_translate_element {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
