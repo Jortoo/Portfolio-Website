@@ -2,12 +2,13 @@ let aboutMeText = "My name is Jordi, I am 19 years old and my passion lays at ev
 let currentAboutMeText = ""
 const aboutMeTextDisplay = document.getElementById("about-me")
 
-function getButton(id) { 
-    const button = document.getElementById(id);
-    if (!button) {
-        console.error("Button with id " + id + " not found!");
+function safeButton(id, callback) {
+    const btn = document.getElementById(id);
+    if (btn) {
+        btn.addEventListener("click", callback);
+    } else {
+        console.warn(`Button with id "${id}" not found on this page.`);
     }
-    return button;
 }
 
 function wait(ms) {
@@ -26,13 +27,15 @@ async function displayAboutMeText() {
 
 displayAboutMeText()
 
-getButton("mail").onclick = function() { window.location.href = "mailto:jortoo@gmail.com" }
-getButton("contact").onclick = function() { window.location.href = "mailto:jortoo@gmail.com" }
-getButton("github").onclick = function() { window.location.href ="https://github.com/Jortoo"; }
-getButton("discord").onclick = function() {
+safeButton("back", () => { window.location.href = "index.html"; });
+safeButton("home", () => { window.location.href = "index.html"; });
+safeButton("contact", () => { window.location.href = "contact.html"; });
+safeButton("mail", () => { window.location.href = "mailto:jortoo@gmail.com"; });
+safeButton("github", () => { window.location.href = "https://github.com/Jortoo"; });
+safeButton("discord", () => {
     navigator.clipboard.writeText("Jortoo");
     alert("Discord tag copied to clipboard!");
-}
+});
 
 getButton("home").onclick = function() { window.location.href = "index.html"; }
 
