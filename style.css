@@ -62,6 +62,11 @@ body {
     justify-content: space-between;
 }
 
+.over-mij {
+    background-color: #14234f;
+    height: 600px;
+}
+
 .over-mij p {
     font-size: 30px;
     margin-left: 100px;
@@ -134,7 +139,7 @@ body {
     margin-left: 20px;
 }
 .button-line {
-    width: 375px;
+    width: 425px;
     margin-right: 20px;
 }
 .bottom-line {
